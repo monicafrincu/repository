@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+    <meta charset="utf-8">
+    
+			<title>Form</title>
+        <link rel="stylesheet" type="text/css" href="stylecl.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		</head>
+
+	<body>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" >
+
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+     
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" name="name" placeholder=" Name"><br>
+
+      <label for="email"><b>Email</b></label> 
+
+      <input type="email" name="name" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" name="Password"><br>
+
+      <input type="submit" name="Login"><br>
+      <label for="Checked button"><b>Checked button </b></label>
+
+              <input type="radio" value="default" name="Checked"><br>
+      </label>
+    </div>
+
+
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+     
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<nav>
+      <ul>
+      <li><a href="page.html"> Home</a></li>
+      <li><a href="Sign Up.html">Profile</a></li>
+      <li><a href="tabel.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+  
+
+
+
+<br><br>
+
+
+
+
+
+	</body>
+</html>

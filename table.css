@@ -1,0 +1,22 @@
+#angajati{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#angajati td, #angajati th{
+	border: px solid #ddd;
+	padding: 8px;
+}
+#angajati tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+#angajati tr: hover{
+	background-color: #ddd;
+}
+#anagjati th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;color: white;
+	background-color: pink;
+}
