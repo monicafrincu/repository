@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab7</title>
+
+</head>
+<body>
+	<script type="text/javascript">
+	// 1
+		var a=1;
+		function b(){
+			a=10;
+			return; 
+			//function a(){}
+		}
+			b();
+			console.log('a='+a);
+
+
+		// 2
+
+
+		for (var i = 0; i <5; i++) {
+    
+        setTimeout(function(x) {return function(){ console.log(x); };}(i), i * 1000);
+   
+}
+
+		// 3
+		
+		setTimeout(function(){
+        try{
+    throw new Error('example')
+    }
+    catch(err){
+        console.log(err)}
+    }, 1000);
+
+
+
+		// 4
+		class Fish extends Animal{
+			constructor(fishType){
+				this.fishType= fishType;
+			} 
+ 
+		getFishType(){
+		return `${this.fishType}`;
+
+}
+	}
+	class Animal {
+	constructor(color) {
+	this.type= type;
+	}
+	getColor() {
+	return `${this.color} `;
+		}
+
+	}
+
+class Dog extends Animal{
+	constructor(dogType);
+ getDogType(){
+	 return `${this.dogType}`;
+ }
+}
+
+
+		
+</script>
+</body>
+</html>  
